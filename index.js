@@ -1,6 +1,20 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+
+      if (array[i] + array[j] === target) {
+      return true
+    }
+  }
+} return false
 }
+
+  // if (i + j === target) {
+  //   console.log('found match')
+  // } else {
+  //   console.log('no match')
+  // }
 
 /* 
   Write the Big O time complexity of your function here
@@ -9,6 +23,10 @@ function hasTargetSum(array, target) {
 /* 
   Add your pseudocode here
 */
+//1. Create two loops that goes through an array
+//2. Add two values as it loops
+//3. Find out if the two elements in the array is equal to target
+//4. Have it continue until all the possible choices have been elavuated
 
 /*
   Add written explanation of your solution here
